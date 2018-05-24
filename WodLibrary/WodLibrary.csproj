@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CardioModel.cs" />
     <Compile Include="ExerciseModel.cs" />
+    <Compile Include="LadiesModel.cs" />
     <Compile Include="MuscleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WodModel.cs" />

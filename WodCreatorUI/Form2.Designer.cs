@@ -67,7 +67,7 @@
             // 
             this.CardioCheckBox.AutoSize = true;
             this.CardioCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CardioCheckBox.Location = new System.Drawing.Point(24, 150);
+            this.CardioCheckBox.Location = new System.Drawing.Point(21, 175);
             this.CardioCheckBox.Name = "CardioCheckBox";
             this.CardioCheckBox.Size = new System.Drawing.Size(85, 29);
             this.CardioCheckBox.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             this.WallBallCheckBox.AutoSize = true;
             this.WallBallCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WallBallCheckBox.Location = new System.Drawing.Point(21, 220);
+            this.WallBallCheckBox.Location = new System.Drawing.Point(21, 245);
             this.WallBallCheckBox.Name = "WallBallCheckBox";
             this.WallBallCheckBox.Size = new System.Drawing.Size(99, 29);
             this.WallBallCheckBox.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.BarBellCheckBox.AutoSize = true;
             this.BarBellCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarBellCheckBox.Location = new System.Drawing.Point(21, 185);
+            this.BarBellCheckBox.Location = new System.Drawing.Point(21, 210);
             this.BarBellCheckBox.Name = "BarBellCheckBox";
             this.BarBellCheckBox.Size = new System.Drawing.Size(87, 29);
             this.BarBellCheckBox.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             this.KettleBellCheckBox.AutoSize = true;
             this.KettleBellCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KettleBellCheckBox.Location = new System.Drawing.Point(21, 270);
+            this.KettleBellCheckBox.Location = new System.Drawing.Point(21, 280);
             this.KettleBellCheckBox.Name = "KettleBellCheckBox";
             this.KettleBellCheckBox.Size = new System.Drawing.Size(107, 29);
             this.KettleBellCheckBox.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.BarCheckBox.AutoSize = true;
             this.BarCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarCheckBox.Location = new System.Drawing.Point(21, 310);
+            this.BarCheckBox.Location = new System.Drawing.Point(21, 315);
             this.BarCheckBox.Name = "BarCheckBox";
             this.BarCheckBox.Size = new System.Drawing.Size(58, 29);
             this.BarCheckBox.TabIndex = 7;

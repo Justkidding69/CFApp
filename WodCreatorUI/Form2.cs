@@ -16,5 +16,6 @@ namespace WodCreatorUI
         {
             InitializeComponent();
         }
+
     }
 }
