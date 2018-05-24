@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.ExerciseLabel = new System.Windows.Forms.Label();
-            this.CreatButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.wodTextBox = new System.Windows.Forms.TextBox();
             this.infoLabel = new System.Windows.Forms.Label();
             this.BarCheckBox = new System.Windows.Forms.CheckBox();
             this.KettleBellCheckBox = new System.Windows.Forms.CheckBox();
@@ -40,47 +36,11 @@
             this.WallBallCheckBox = new System.Windows.Forms.CheckBox();
             this.CardioCheckBox = new System.Windows.Forms.CheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.wodListBox = new System.Windows.Forms.ListBox();
+            this.ExerciseLabel = new System.Windows.Forms.Label();
+            this.CreatButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // ExerciseLabel
-            // 
-            this.ExerciseLabel.AutoSize = true;
-            this.ExerciseLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExerciseLabel.Location = new System.Drawing.Point(250, 30);
-            this.ExerciseLabel.Name = "ExerciseLabel";
-            this.ExerciseLabel.Size = new System.Drawing.Size(144, 20);
-            this.ExerciseLabel.TabIndex = 15;
-            this.ExerciseLabel.Text = "Number of Exercise\'s";
-            // 
-            // CreatButton
-            // 
-            this.CreatButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CreatButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.CreatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreatButton.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatButton.Location = new System.Drawing.Point(459, 52);
-            this.CreatButton.Name = "CreatButton";
-            this.CreatButton.Size = new System.Drawing.Size(148, 29);
-            this.CreatButton.TabIndex = 14;
-            this.CreatButton.Text = "Create";
-            this.CreatButton.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(254, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(37, 27);
-            this.textBox1.TabIndex = 13;
-            // 
-            // wodTextBox
-            // 
-            this.wodTextBox.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodTextBox.Location = new System.Drawing.Point(254, 87);
-            this.wodTextBox.Multiline = true;
-            this.wodTextBox.Name = "wodTextBox";
-            this.wodTextBox.Size = new System.Drawing.Size(353, 257);
-            this.wodTextBox.TabIndex = 12;
             // 
             // infoLabel
             // 
@@ -159,22 +119,64 @@
             this.titleLabel.Tag = "";
             this.titleLabel.Text = "10-9-8-7-6-5...";
             // 
+            // wodListBox
+            // 
+            this.wodListBox.BackColor = System.Drawing.Color.White;
+            this.wodListBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodListBox.FormattingEnabled = true;
+            this.wodListBox.ItemHeight = 30;
+            this.wodListBox.Location = new System.Drawing.Point(254, 87);
+            this.wodListBox.Name = "wodListBox";
+            this.wodListBox.Size = new System.Drawing.Size(199, 244);
+            this.wodListBox.TabIndex = 34;
+            // 
+            // ExerciseLabel
+            // 
+            this.ExerciseLabel.AutoSize = true;
+            this.ExerciseLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExerciseLabel.Location = new System.Drawing.Point(250, 30);
+            this.ExerciseLabel.Name = "ExerciseLabel";
+            this.ExerciseLabel.Size = new System.Drawing.Size(144, 20);
+            this.ExerciseLabel.TabIndex = 33;
+            this.ExerciseLabel.Text = "Number of Exercise\'s";
+            // 
+            // CreatButton
+            // 
+            this.CreatButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CreatButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.CreatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CreatButton.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatButton.Location = new System.Drawing.Point(459, 87);
+            this.CreatButton.Name = "CreatButton";
+            this.CreatButton.Size = new System.Drawing.Size(148, 29);
+            this.CreatButton.TabIndex = 32;
+            this.CreatButton.Text = "Create";
+            this.CreatButton.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(254, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(37, 27);
+            this.textBox1.TabIndex = 31;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(619, 356);
+            this.Controls.Add(this.wodListBox);
             this.Controls.Add(this.ExerciseLabel);
+            this.Controls.Add(this.CreatButton);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.BarCheckBox);
             this.Controls.Add(this.KettleBellCheckBox);
             this.Controls.Add(this.BarBellCheckBox);
             this.Controls.Add(this.WallBallCheckBox);
             this.Controls.Add(this.CardioCheckBox);
-            this.Controls.Add(this.CreatButton);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.wodTextBox);
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -187,11 +189,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label ExerciseLabel;
-        private System.Windows.Forms.Button CreatButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox wodTextBox;
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.CheckBox BarCheckBox;
         private System.Windows.Forms.CheckBox KettleBellCheckBox;
@@ -199,5 +196,9 @@
         private System.Windows.Forms.CheckBox WallBallCheckBox;
         private System.Windows.Forms.CheckBox CardioCheckBox;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.ListBox wodListBox;
+        private System.Windows.Forms.Label ExerciseLabel;
+        private System.Windows.Forms.Button CreatButton;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
