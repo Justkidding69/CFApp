@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WodDashBoard));
             this.titleLabel = new System.Windows.Forms.Label();
-            this.wodOptionOne = new System.Windows.Forms.Button();
-            this.wodOptionTwo = new System.Windows.Forms.Button();
-            this.wodOptionThree = new System.Windows.Forms.Button();
-            this.wodOptionFour = new System.Windows.Forms.Button();
-            this.wodOptionFive = new System.Windows.Forms.Button();
-            this.wodOptionSix = new System.Windows.Forms.Button();
+            this.wodOptionOneButton = new System.Windows.Forms.Button();
+            this.wodOptionTwoButton = new System.Windows.Forms.Button();
+            this.wodOptionThreeButton = new System.Windows.Forms.Button();
+            this.wodOptionFourButton = new System.Windows.Forms.Button();
+            this.wodOptionFiveButton = new System.Windows.Forms.Button();
+            this.wodOptionSixButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -50,83 +50,89 @@
             this.titleLabel.Tag = "";
             this.titleLabel.Text = "Choose";
             // 
-            // wodOptionOne
+            // wodOptionOneButton
             // 
-            this.wodOptionOne.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionOne.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionOne.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionOne.Location = new System.Drawing.Point(48, 72);
-            this.wodOptionOne.Name = "wodOptionOne";
-            this.wodOptionOne.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionOne.TabIndex = 1;
-            this.wodOptionOne.Text = "21-15-9";
-            this.wodOptionOne.UseVisualStyleBackColor = true;
+            this.wodOptionOneButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionOneButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionOneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionOneButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionOneButton.Location = new System.Drawing.Point(48, 72);
+            this.wodOptionOneButton.Name = "wodOptionOneButton";
+            this.wodOptionOneButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionOneButton.TabIndex = 1;
+            this.wodOptionOneButton.Text = "21-15-9";
+            this.wodOptionOneButton.UseVisualStyleBackColor = true;
+            this.wodOptionOneButton.Click += new System.EventHandler(this.wodOptionOne_Click);
             // 
-            // wodOptionTwo
+            // wodOptionTwoButton
             // 
-            this.wodOptionTwo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionTwo.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionTwo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionTwo.Location = new System.Drawing.Point(48, 107);
-            this.wodOptionTwo.Name = "wodOptionTwo";
-            this.wodOptionTwo.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionTwo.TabIndex = 2;
-            this.wodOptionTwo.Text = "10-9-8-7-6-5...";
-            this.wodOptionTwo.UseVisualStyleBackColor = true;
+            this.wodOptionTwoButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionTwoButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionTwoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionTwoButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionTwoButton.Location = new System.Drawing.Point(48, 107);
+            this.wodOptionTwoButton.Name = "wodOptionTwoButton";
+            this.wodOptionTwoButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionTwoButton.TabIndex = 2;
+            this.wodOptionTwoButton.Text = "10-9-8-7-6-5...";
+            this.wodOptionTwoButton.UseVisualStyleBackColor = true;
+            this.wodOptionTwoButton.Click += new System.EventHandler(this.wodOptionTwo_Click);
             // 
-            // wodOptionThree
+            // wodOptionThreeButton
             // 
-            this.wodOptionThree.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionThree.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionThree.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionThree.Location = new System.Drawing.Point(48, 142);
-            this.wodOptionThree.Name = "wodOptionThree";
-            this.wodOptionThree.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionThree.TabIndex = 3;
-            this.wodOptionThree.Text = "AMRAP";
-            this.wodOptionThree.UseVisualStyleBackColor = true;
+            this.wodOptionThreeButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionThreeButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionThreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionThreeButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionThreeButton.Location = new System.Drawing.Point(48, 142);
+            this.wodOptionThreeButton.Name = "wodOptionThreeButton";
+            this.wodOptionThreeButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionThreeButton.TabIndex = 3;
+            this.wodOptionThreeButton.Text = "AMRAP";
+            this.wodOptionThreeButton.UseVisualStyleBackColor = true;
+            this.wodOptionThreeButton.Click += new System.EventHandler(this.wodOptionThreeButton_Click);
             // 
-            // wodOptionFour
+            // wodOptionFourButton
             // 
-            this.wodOptionFour.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionFour.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionFour.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionFour.Location = new System.Drawing.Point(48, 177);
-            this.wodOptionFour.Name = "wodOptionFour";
-            this.wodOptionFour.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionFour.TabIndex = 4;
-            this.wodOptionFour.Text = "EMOTM";
-            this.wodOptionFour.UseVisualStyleBackColor = true;
+            this.wodOptionFourButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionFourButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionFourButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionFourButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionFourButton.Location = new System.Drawing.Point(48, 177);
+            this.wodOptionFourButton.Name = "wodOptionFourButton";
+            this.wodOptionFourButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionFourButton.TabIndex = 4;
+            this.wodOptionFourButton.Text = "EMOTM";
+            this.wodOptionFourButton.UseVisualStyleBackColor = true;
+            this.wodOptionFourButton.Click += new System.EventHandler(this.wodOptionFourButton_Click);
             // 
-            // wodOptionFive
+            // wodOptionFiveButton
             // 
-            this.wodOptionFive.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionFive.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionFive.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionFive.Location = new System.Drawing.Point(48, 212);
-            this.wodOptionFive.Name = "wodOptionFive";
-            this.wodOptionFive.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionFive.TabIndex = 5;
-            this.wodOptionFive.Text = "Ladies";
-            this.wodOptionFive.UseVisualStyleBackColor = true;
+            this.wodOptionFiveButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionFiveButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionFiveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionFiveButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionFiveButton.Location = new System.Drawing.Point(48, 212);
+            this.wodOptionFiveButton.Name = "wodOptionFiveButton";
+            this.wodOptionFiveButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionFiveButton.TabIndex = 5;
+            this.wodOptionFiveButton.Text = "Ladies";
+            this.wodOptionFiveButton.UseVisualStyleBackColor = true;
+            this.wodOptionFiveButton.Click += new System.EventHandler(this.wodOptionFiveButton_Click);
             // 
-            // wodOptionSix
+            // wodOptionSixButton
             // 
-            this.wodOptionSix.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.wodOptionSix.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.wodOptionSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionSix.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionSix.Location = new System.Drawing.Point(48, 247);
-            this.wodOptionSix.Name = "wodOptionSix";
-            this.wodOptionSix.Size = new System.Drawing.Size(148, 29);
-            this.wodOptionSix.TabIndex = 6;
-            this.wodOptionSix.Text = "Random";
-            this.wodOptionSix.UseVisualStyleBackColor = true;
+            this.wodOptionSixButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionSixButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionSixButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionSixButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionSixButton.Location = new System.Drawing.Point(48, 247);
+            this.wodOptionSixButton.Name = "wodOptionSixButton";
+            this.wodOptionSixButton.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionSixButton.TabIndex = 6;
+            this.wodOptionSixButton.Text = "Random";
+            this.wodOptionSixButton.UseVisualStyleBackColor = true;
+            this.wodOptionSixButton.Click += new System.EventHandler(this.wodOptionSixButton_Click);
             // 
             // WodDashBoard
             // 
@@ -134,12 +140,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(243, 305);
-            this.Controls.Add(this.wodOptionSix);
-            this.Controls.Add(this.wodOptionFive);
-            this.Controls.Add(this.wodOptionFour);
-            this.Controls.Add(this.wodOptionThree);
-            this.Controls.Add(this.wodOptionTwo);
-            this.Controls.Add(this.wodOptionOne);
+            this.Controls.Add(this.wodOptionSixButton);
+            this.Controls.Add(this.wodOptionFiveButton);
+            this.Controls.Add(this.wodOptionFourButton);
+            this.Controls.Add(this.wodOptionThreeButton);
+            this.Controls.Add(this.wodOptionTwoButton);
+            this.Controls.Add(this.wodOptionOneButton);
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -154,12 +160,12 @@
         #endregion
 
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Button wodOptionOne;
-        private System.Windows.Forms.Button wodOptionTwo;
-        private System.Windows.Forms.Button wodOptionThree;
-        private System.Windows.Forms.Button wodOptionFour;
-        private System.Windows.Forms.Button wodOptionFive;
-        private System.Windows.Forms.Button wodOptionSix;
+        private System.Windows.Forms.Button wodOptionOneButton;
+        private System.Windows.Forms.Button wodOptionTwoButton;
+        private System.Windows.Forms.Button wodOptionThreeButton;
+        private System.Windows.Forms.Button wodOptionFourButton;
+        private System.Windows.Forms.Button wodOptionFiveButton;
+        private System.Windows.Forms.Button wodOptionSixButton;
     }
 }
 

@@ -60,25 +60,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="WodDashBord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="WodDashBord.Designer.cs">
+      <DependentUpon>WodDashBord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="WodOptionOne.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="WodOptionOne.Designer.cs">
+      <DependentUpon>WodOptionOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WodOptionSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WodOptionSix.Designer.cs">
+      <DependentUpon>WodOptionSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WodOptionTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WodOptionTwo.Designer.cs">
+      <DependentUpon>WodOptionTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WodOptionTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WodOptionTree.Designer.cs">
+      <DependentUpon>WodOptionTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WodOptionFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WodOptionFour.Designer.cs">
+      <DependentUpon>WodOptionFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WodOptionFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WodOptionFive.Designer.cs">
+      <DependentUpon>WodOptionFive.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="WodDashBord.resx">
+      <DependentUpon>WodDashBord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="WodOptionOne.resx">
+      <DependentUpon>WodOptionOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WodOptionSix.resx">
+      <DependentUpon>WodOptionSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WodOptionTwo.resx">
+      <DependentUpon>WodOptionTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WodOptionTree.resx">
+      <DependentUpon>WodOptionTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WodOptionFour.resx">
+      <DependentUpon>WodOptionFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WodOptionFive.resx">
+      <DependentUpon>WodOptionFive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

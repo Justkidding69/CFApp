@@ -13,5 +13,8 @@ namespace WodLibrary
         public string Type { get; set; }
 
         public string ExerciseName { get; set; }
+
+        public int NumberOfRounds { get; set; }
+
     }
 }

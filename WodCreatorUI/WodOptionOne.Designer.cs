@@ -1,6 +1,6 @@
 ﻿namespace WodCreatorUI
 {
-    partial class form2
+    partial class WodOptionOne
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WodOptionOne));
             this.titleLabel = new System.Windows.Forms.Label();
             this.CardioCheckBox = new System.Windows.Forms.CheckBox();
             this.WallBallCheckBox = new System.Windows.Forms.CheckBox();
