@@ -12,10 +12,12 @@ namespace WodLibrary
 
         public string WodName { get; set; }
 
-        public List<Exercise> Movement { get; set; } = new List<Exercise>();
+        public List<ExerciseModel> Movement { get; set; } = new List<ExerciseModel>();
 
-        public List<Cardio> HighPulse { get; set; } = new List<Cardio>();
+        public List<CardioModel> HighPulse { get; set; } = new List<CardioModel>();
 
-        public List<Muscle> MuscleGroup { get; set; } = new List<Muscle>();
+        public List<MuscleModel> MuscleGroup { get; set; } = new List<MuscleModel>();
+
+        public List<LadiesModel> Ladies { get; set; } = new List<LadiesModel>();
     }
 }
