@@ -8,6 +8,7 @@ namespace WodLibrary
 {
     public class MuscleModel
     {
+        
         public string Arms { get; set; }
 
         public string Legs { get; set; }

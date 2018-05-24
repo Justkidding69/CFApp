@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.titleLabel = new System.Windows.Forms.Label();
             this.wodOptionOne = new System.Windows.Forms.Button();
             this.wodOptionTwo = new System.Windows.Forms.Button();
             this.wodOptionThree = new System.Windows.Forms.Button();
             this.wodOptionFour = new System.Windows.Forms.Button();
             this.wodOptionFive = new System.Windows.Forms.Button();
+            this.wodOptionSix = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.Black;
-            this.titleLabel.Location = new System.Drawing.Point(12, 9);
+            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.titleLabel.Location = new System.Drawing.Point(51, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(127, 45);
+            this.titleLabel.Size = new System.Drawing.Size(141, 50);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Tag = "";
             this.titleLabel.Text = "Choose";
@@ -113,12 +115,26 @@
             this.wodOptionFive.Text = "Ladies";
             this.wodOptionFive.UseVisualStyleBackColor = true;
             // 
+            // wodOptionSix
+            // 
+            this.wodOptionSix.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionSix.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.wodOptionSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wodOptionSix.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionSix.Location = new System.Drawing.Point(48, 247);
+            this.wodOptionSix.Name = "wodOptionSix";
+            this.wodOptionSix.Size = new System.Drawing.Size(148, 29);
+            this.wodOptionSix.TabIndex = 6;
+            this.wodOptionSix.Text = "Random";
+            this.wodOptionSix.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(243, 339);
+            this.ClientSize = new System.Drawing.Size(243, 305);
+            this.Controls.Add(this.wodOptionSix);
             this.Controls.Add(this.wodOptionFive);
             this.Controls.Add(this.wodOptionFour);
             this.Controls.Add(this.wodOptionThree);
@@ -126,9 +142,10 @@
             this.Controls.Add(this.wodOptionOne);
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Form1";
-            this.Text = "WOD Creator";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,6 +159,7 @@
         private System.Windows.Forms.Button wodOptionThree;
         private System.Windows.Forms.Button wodOptionFour;
         private System.Windows.Forms.Button wodOptionFive;
+        private System.Windows.Forms.Button wodOptionSix;
     }
 }
 
