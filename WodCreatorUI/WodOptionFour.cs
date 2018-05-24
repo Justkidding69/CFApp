@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WodCreatorUI
 {
-    public partial class Form1 : Form
+    public partial class WodOptionFour : Form
     {
-        public Form1()
+        public WodOptionFour()
         {
             InitializeComponent();
         }

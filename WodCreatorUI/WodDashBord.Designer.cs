@@ -1,6 +1,6 @@
 ﻿namespace WodCreatorUI
 {
-    partial class Form1
+    partial class WodDashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WodDashBoard));
             this.titleLabel = new System.Windows.Forms.Label();
             this.wodOptionOne = new System.Windows.Forms.Button();
             this.wodOptionTwo = new System.Windows.Forms.Button();
@@ -128,7 +128,7 @@
             this.wodOptionSix.Text = "Random";
             this.wodOptionSix.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // WodDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,7 +144,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7);
-            this.Name = "Form1";
+            this.Name = "WodDashBoard";
             this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
