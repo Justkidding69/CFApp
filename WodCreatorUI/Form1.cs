@@ -16,10 +16,5 @@ namespace WodCreatorUI
         {
             InitializeComponent();
         }
-
-        private void titleLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
