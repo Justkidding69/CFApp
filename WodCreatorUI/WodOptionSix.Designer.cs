@@ -35,41 +35,50 @@
             this.KettleBellCheckBox = new System.Windows.Forms.CheckBox();
             this.BarBellCheckBox = new System.Windows.Forms.CheckBox();
             this.WallBallCheckBox = new System.Windows.Forms.CheckBox();
-            this.CardioCheckBox = new System.Windows.Forms.CheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
             this.ExerciseLabel = new System.Windows.Forms.Label();
-            this.CreatButton = new System.Windows.Forms.Button();
+            this.CreateButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.testSearchText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // wodListBox
             // 
-            this.wodListBox.BackColor = System.Drawing.Color.White;
-            this.wodListBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.wodListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.wodListBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodListBox.ForeColor = System.Drawing.Color.White;
             this.wodListBox.FormattingEnabled = true;
-            this.wodListBox.ItemHeight = 30;
-            this.wodListBox.Location = new System.Drawing.Point(254, 87);
+            this.wodListBox.ItemHeight = 16;
+            this.wodListBox.Location = new System.Drawing.Point(222, 91);
+            this.wodListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.wodListBox.Name = "wodListBox";
-            this.wodListBox.Size = new System.Drawing.Size(199, 244);
+            this.wodListBox.Size = new System.Drawing.Size(211, 256);
             this.wodListBox.TabIndex = 52;
             // 
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoLabel.Location = new System.Drawing.Point(16, 87);
+            this.infoLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLabel.ForeColor = System.Drawing.Color.White;
+            this.infoLabel.Location = new System.Drawing.Point(20, 91);
+            this.infoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(161, 60);
+            this.infoLabel.Size = new System.Drawing.Size(174, 48);
             this.infoLabel.TabIndex = 51;
             this.infoLabel.Text = "Check if you \r\nwant it included";
             // 
             // BarCheckBox
             // 
             this.BarCheckBox.AutoSize = true;
-            this.BarCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarCheckBox.Location = new System.Drawing.Point(21, 315);
+            this.BarCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BarCheckBox.ForeColor = System.Drawing.Color.White;
+            this.BarCheckBox.Location = new System.Drawing.Point(23, 279);
+            this.BarCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BarCheckBox.Name = "BarCheckBox";
-            this.BarCheckBox.Size = new System.Drawing.Size(58, 29);
+            this.BarCheckBox.Size = new System.Drawing.Size(59, 26);
             this.BarCheckBox.TabIndex = 50;
             this.BarCheckBox.Text = "Bar";
             this.BarCheckBox.UseVisualStyleBackColor = true;
@@ -77,10 +86,12 @@
             // KettleBellCheckBox
             // 
             this.KettleBellCheckBox.AutoSize = true;
-            this.KettleBellCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KettleBellCheckBox.Location = new System.Drawing.Point(21, 280);
+            this.KettleBellCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KettleBellCheckBox.ForeColor = System.Drawing.Color.White;
+            this.KettleBellCheckBox.Location = new System.Drawing.Point(23, 242);
+            this.KettleBellCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.KettleBellCheckBox.Name = "KettleBellCheckBox";
-            this.KettleBellCheckBox.Size = new System.Drawing.Size(107, 29);
+            this.KettleBellCheckBox.Size = new System.Drawing.Size(110, 26);
             this.KettleBellCheckBox.TabIndex = 49;
             this.KettleBellCheckBox.Text = "KettleBell";
             this.KettleBellCheckBox.UseVisualStyleBackColor = true;
@@ -88,10 +99,12 @@
             // BarBellCheckBox
             // 
             this.BarBellCheckBox.AutoSize = true;
-            this.BarBellCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarBellCheckBox.Location = new System.Drawing.Point(21, 210);
+            this.BarBellCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BarBellCheckBox.ForeColor = System.Drawing.Color.White;
+            this.BarBellCheckBox.Location = new System.Drawing.Point(23, 168);
+            this.BarBellCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BarBellCheckBox.Name = "BarBellCheckBox";
-            this.BarBellCheckBox.Size = new System.Drawing.Size(87, 29);
+            this.BarBellCheckBox.Size = new System.Drawing.Size(90, 26);
             this.BarBellCheckBox.TabIndex = 48;
             this.BarBellCheckBox.Text = "Barbell";
             this.BarBellCheckBox.UseVisualStyleBackColor = true;
@@ -99,33 +112,25 @@
             // WallBallCheckBox
             // 
             this.WallBallCheckBox.AutoSize = true;
-            this.WallBallCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WallBallCheckBox.Location = new System.Drawing.Point(21, 245);
+            this.WallBallCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WallBallCheckBox.ForeColor = System.Drawing.Color.White;
+            this.WallBallCheckBox.Location = new System.Drawing.Point(23, 205);
+            this.WallBallCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.WallBallCheckBox.Name = "WallBallCheckBox";
-            this.WallBallCheckBox.Size = new System.Drawing.Size(99, 29);
+            this.WallBallCheckBox.Size = new System.Drawing.Size(100, 26);
             this.WallBallCheckBox.TabIndex = 47;
             this.WallBallCheckBox.Text = "Wall Ball";
             this.WallBallCheckBox.UseVisualStyleBackColor = true;
             // 
-            // CardioCheckBox
-            // 
-            this.CardioCheckBox.AutoSize = true;
-            this.CardioCheckBox.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CardioCheckBox.Location = new System.Drawing.Point(21, 175);
-            this.CardioCheckBox.Name = "CardioCheckBox";
-            this.CardioCheckBox.Size = new System.Drawing.Size(85, 29);
-            this.CardioCheckBox.TabIndex = 46;
-            this.CardioCheckBox.Text = "Cardio";
-            this.CardioCheckBox.UseVisualStyleBackColor = true;
-            // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.titleLabel.Location = new System.Drawing.Point(12, 9);
+            this.titleLabel.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.White;
+            this.titleLabel.Location = new System.Drawing.Point(15, 9);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(240, 50);
+            this.titleLabel.Size = new System.Drawing.Size(266, 44);
             this.titleLabel.TabIndex = 45;
             this.titleLabel.Tag = "";
             this.titleLabel.Text = "Random Wod";
@@ -133,55 +138,112 @@
             // ExerciseLabel
             // 
             this.ExerciseLabel.AutoSize = true;
-            this.ExerciseLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExerciseLabel.Location = new System.Drawing.Point(250, 30);
+            this.ExerciseLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExerciseLabel.ForeColor = System.Drawing.Color.White;
+            this.ExerciseLabel.Location = new System.Drawing.Point(218, 65);
+            this.ExerciseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExerciseLabel.Name = "ExerciseLabel";
-            this.ExerciseLabel.Size = new System.Drawing.Size(144, 20);
+            this.ExerciseLabel.Size = new System.Drawing.Size(158, 20);
             this.ExerciseLabel.TabIndex = 44;
             this.ExerciseLabel.Text = "Number of Exercise\'s";
             // 
-            // CreatButton
+            // CreateButton
             // 
-            this.CreatButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CreatButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.CreatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreatButton.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatButton.Location = new System.Drawing.Point(459, 87);
-            this.CreatButton.Name = "CreatButton";
-            this.CreatButton.Size = new System.Drawing.Size(148, 29);
-            this.CreatButton.TabIndex = 43;
-            this.CreatButton.Text = "Create";
-            this.CreatButton.UseVisualStyleBackColor = true;
+            this.CreateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.CreateButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CreateButton.FlatAppearance.BorderSize = 0;
+            this.CreateButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.CreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CreateButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateButton.ForeColor = System.Drawing.Color.White;
+            this.CreateButton.Location = new System.Drawing.Point(441, 91);
+            this.CreateButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.CreateButton.Name = "CreateButton";
+            this.CreateButton.Size = new System.Drawing.Size(104, 30);
+            this.CreateButton.TabIndex = 43;
+            this.CreateButton.Text = "Create";
+            this.CreateButton.UseVisualStyleBackColor = false;
+            this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(254, 53);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(384, 66);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(37, 27);
+            this.textBox1.Size = new System.Drawing.Size(49, 19);
             this.textBox1.TabIndex = 42;
             // 
-            // WodOptionSeven
+            // SaveButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SaveButton.FlatAppearance.BorderSize = 0;
+            this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.ForeColor = System.Drawing.Color.White;
+            this.SaveButton.Location = new System.Drawing.Point(441, 127);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(104, 30);
+            this.SaveButton.TabIndex = 53;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = false;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.CloseButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.ForeColor = System.Drawing.Color.White;
+            this.CloseButton.Location = new System.Drawing.Point(441, 311);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(104, 30);
+            this.CloseButton.TabIndex = 54;
+            this.CloseButton.Text = "Close";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // testSearchText
+            // 
+            this.testSearchText.Location = new System.Drawing.Point(441, 36);
+            this.testSearchText.Name = "testSearchText";
+            this.testSearchText.Size = new System.Drawing.Size(100, 27);
+            this.testSearchText.TabIndex = 55;
+            // 
+            // WodOptionSix
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(619, 356);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.ClientSize = new System.Drawing.Size(569, 373);
+            this.Controls.Add(this.testSearchText);
+            this.Controls.Add(this.CloseButton);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.wodListBox);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.BarCheckBox);
             this.Controls.Add(this.KettleBellCheckBox);
             this.Controls.Add(this.BarBellCheckBox);
             this.Controls.Add(this.WallBallCheckBox);
-            this.Controls.Add(this.CardioCheckBox);
             this.Controls.Add(this.ExerciseLabel);
-            this.Controls.Add(this.CreatButton);
+            this.Controls.Add(this.CreateButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.titleLabel);
-            this.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "WodOptionSeven";
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "WodOptionSix";
             this.Text = "Random";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,10 +258,12 @@
         private System.Windows.Forms.CheckBox KettleBellCheckBox;
         private System.Windows.Forms.CheckBox BarBellCheckBox;
         private System.Windows.Forms.CheckBox WallBallCheckBox;
-        private System.Windows.Forms.CheckBox CardioCheckBox;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label ExerciseLabel;
-        private System.Windows.Forms.Button CreatButton;
+        private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.TextBox testSearchText;
     }
 }

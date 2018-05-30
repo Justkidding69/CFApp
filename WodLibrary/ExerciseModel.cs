@@ -8,15 +8,19 @@ namespace WodLibrary
 {
     public class ExerciseModel
     {
+        public int id { get; set; }
+
         public string ExerciseName { get; set; }
 
-        public string Bar { get; set; }
+        public string ExerciseEquipment { get; set; }
 
-        public string Barbell { get; set; }
-
-        public string Kettlebell { get; set; }
-
-        public string WallBall { get; set; }
+        public string FullInfo
+        {
+            get
+            {
+                return $"{ExerciseName} ({ExerciseEquipment})";
+            }
+        }
 
     }
 }

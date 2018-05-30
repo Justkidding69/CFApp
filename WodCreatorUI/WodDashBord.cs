@@ -59,8 +59,13 @@ namespace WodCreatorUI
         private void wodOptionSixButton_Click(object sender, EventArgs e)
         {
             var formSix = new WodOptionSix();
-            formSix.StartPosition = FormStartPosition.CenterScreen;
+
             formSix.Show();
+        }
+
+        private void WodDashBoard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

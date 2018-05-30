@@ -152,6 +152,7 @@
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "WodDashBoard";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.WodDashBoard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
