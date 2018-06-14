@@ -14,7 +14,7 @@ namespace WodLibrary
 
         public string ExerciseEquipment { get; set; }
 
-        public string FullInfo
+        public string ExerciseID
         {
             get
             {
@@ -23,4 +23,5 @@ namespace WodLibrary
         }
 
     }
+
 }

@@ -41,21 +41,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
-            this.testSearchText = new System.Windows.Forms.TextBox();
+            this.BodyCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // wodListBox
             // 
             this.wodListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.wodListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.wodListBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodListBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wodListBox.ForeColor = System.Drawing.Color.White;
             this.wodListBox.FormattingEnabled = true;
-            this.wodListBox.ItemHeight = 16;
+            this.wodListBox.ItemHeight = 17;
             this.wodListBox.Location = new System.Drawing.Point(222, 91);
             this.wodListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.wodListBox.Name = "wodListBox";
-            this.wodListBox.Size = new System.Drawing.Size(211, 256);
+            this.wodListBox.Size = new System.Drawing.Size(211, 255);
             this.wodListBox.TabIndex = 52;
             // 
             // infoLabel
@@ -193,6 +193,7 @@
             this.SaveButton.TabIndex = 53;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // CloseButton
             // 
@@ -203,7 +204,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(441, 311);
+            this.CloseButton.Location = new System.Drawing.Point(441, 316);
             this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(104, 30);
@@ -212,12 +213,18 @@
             this.CloseButton.UseVisualStyleBackColor = false;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // testSearchText
+            // BodyCheckBox
             // 
-            this.testSearchText.Location = new System.Drawing.Point(441, 36);
-            this.testSearchText.Name = "testSearchText";
-            this.testSearchText.Size = new System.Drawing.Size(100, 27);
-            this.testSearchText.TabIndex = 55;
+            this.BodyCheckBox.AutoSize = true;
+            this.BodyCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BodyCheckBox.ForeColor = System.Drawing.Color.White;
+            this.BodyCheckBox.Location = new System.Drawing.Point(23, 315);
+            this.BodyCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BodyCheckBox.Name = "BodyCheckBox";
+            this.BodyCheckBox.Size = new System.Drawing.Size(76, 26);
+            this.BodyCheckBox.TabIndex = 55;
+            this.BodyCheckBox.Text = "Body";
+            this.BodyCheckBox.UseVisualStyleBackColor = true;
             // 
             // WodOptionSix
             // 
@@ -225,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(569, 373);
-            this.Controls.Add(this.testSearchText);
+            this.Controls.Add(this.BodyCheckBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.wodListBox);
@@ -242,7 +249,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "WodOptionSix";
             this.Text = "Random";
             this.ResumeLayout(false);
@@ -264,6 +271,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CloseButton;
-        private System.Windows.Forms.TextBox testSearchText;
+        private System.Windows.Forms.CheckBox BodyCheckBox;
     }
 }

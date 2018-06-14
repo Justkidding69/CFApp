@@ -13,10 +13,12 @@ namespace WodCreatorUI
     {
         public List<ExerciseModel> GetExercise(string ExerciseEquipment)
         {
+
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("WodDB")))
             {
+ 
                 return connection.Query<ExerciseModel>("dbo.GetEquipmentType @ExerciseEquipment", new { ExerciseEquipment = ExerciseEquipment }).ToList();
-
+                
             }
         }
     }
