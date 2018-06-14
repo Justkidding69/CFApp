@@ -59,8 +59,6 @@ namespace WodCreatorUI
             DataAccess db = new DataAccess(); // connect's with the database
             Exercise = new List<ExerciseModel>(); // makes a new list for Exercise, so it wont be overridden at every IF statement
 
-
-
             if (BarBellCheckBox.Checked)
             {
                 Exercise.AddRange( db.GetExercise(BarBellCheckBox.Text));
@@ -93,9 +91,14 @@ namespace WodCreatorUI
             }
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
+        private void ClearButton_Click(object sender, EventArgs e)
         {
-            
+            wodListBox.DataSource = null;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

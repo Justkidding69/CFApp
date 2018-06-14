@@ -32,28 +32,31 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.wodOptionFiveButton = new System.Windows.Forms.Button();
             this.wodOptionSixButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(51, 9);
+            this.titleLabel.Location = new System.Drawing.Point(46, 56);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(141, 50);
+            this.titleLabel.Size = new System.Drawing.Size(159, 44);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Tag = "";
             this.titleLabel.Text = "Choose";
             // 
             // wodOptionFiveButton
             // 
-            this.wodOptionFiveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.wodOptionFiveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.wodOptionFiveButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionFiveButton.FlatAppearance.BorderSize = 0;
             this.wodOptionFiveButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
             this.wodOptionFiveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionFiveButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionFiveButton.Location = new System.Drawing.Point(48, 133);
+            this.wodOptionFiveButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionFiveButton.Location = new System.Drawing.Point(51, 172);
             this.wodOptionFiveButton.Name = "wodOptionFiveButton";
             this.wodOptionFiveButton.Size = new System.Drawing.Size(148, 29);
             this.wodOptionFiveButton.TabIndex = 5;
@@ -63,12 +66,13 @@
             // 
             // wodOptionSixButton
             // 
-            this.wodOptionSixButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.wodOptionSixButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.wodOptionSixButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wodOptionSixButton.FlatAppearance.BorderSize = 0;
             this.wodOptionSixButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
             this.wodOptionSixButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wodOptionSixButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wodOptionSixButton.Location = new System.Drawing.Point(48, 87);
+            this.wodOptionSixButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wodOptionSixButton.Location = new System.Drawing.Point(51, 127);
             this.wodOptionSixButton.Name = "wodOptionSixButton";
             this.wodOptionSixButton.Size = new System.Drawing.Size(148, 29);
             this.wodOptionSixButton.TabIndex = 6;
@@ -76,12 +80,40 @@
             this.wodOptionSixButton.UseVisualStyleBackColor = false;
             this.wodOptionSixButton.Click += new System.EventHandler(this.wodOptionSixButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(51, 217);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 29);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Hero Wod";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(220, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 21);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // WodDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(243, 305);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
+            this.ClientSize = new System.Drawing.Size(243, 276);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.wodOptionSixButton);
             this.Controls.Add(this.wodOptionFiveButton);
             this.Controls.Add(this.titleLabel);
@@ -103,6 +135,8 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button wodOptionFiveButton;
         private System.Windows.Forms.Button wodOptionSixButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

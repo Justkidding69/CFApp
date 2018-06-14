@@ -39,14 +39,15 @@
             this.ExerciseLabel = new System.Windows.Forms.Label();
             this.CreateButton = new System.Windows.Forms.Button();
             this.NrOfExerciseTextbox = new System.Windows.Forms.TextBox();
-            this.SaveButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.BodyCheckBox = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // wodListBox
             // 
-            this.wodListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.wodListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.wodListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.wodListBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wodListBox.ForeColor = System.Drawing.Color.White;
@@ -66,9 +67,9 @@
             this.infoLabel.Location = new System.Drawing.Point(19, 69);
             this.infoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(174, 48);
+            this.infoLabel.Size = new System.Drawing.Size(186, 48);
             this.infoLabel.TabIndex = 51;
-            this.infoLabel.Text = "Check if you \r\nwant it included";
+            this.infoLabel.Text = "Leave blank to \r\nselect everything";
             // 
             // BarCheckBox
             // 
@@ -149,7 +150,7 @@
             // 
             // CreateButton
             // 
-            this.CreateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.CreateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.CreateButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.CreateButton.FlatAppearance.BorderSize = 0;
             this.CreateButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
@@ -167,7 +168,7 @@
             // 
             // NrOfExerciseTextbox
             // 
-            this.NrOfExerciseTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.NrOfExerciseTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.NrOfExerciseTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NrOfExerciseTextbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NrOfExerciseTextbox.ForeColor = System.Drawing.Color.White;
@@ -177,27 +178,27 @@
             this.NrOfExerciseTextbox.Size = new System.Drawing.Size(49, 19);
             this.NrOfExerciseTextbox.TabIndex = 42;
             // 
-            // SaveButton
+            // ClearButton
             // 
-            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.SaveButton.FlatAppearance.BorderSize = 0;
-            this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.ForeColor = System.Drawing.Color.White;
-            this.SaveButton.Location = new System.Drawing.Point(442, 164);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(104, 30);
-            this.SaveButton.TabIndex = 53;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.ClearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.ClearButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClearButton.FlatAppearance.BorderSize = 0;
+            this.ClearButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.ForeColor = System.Drawing.Color.White;
+            this.ClearButton.Location = new System.Drawing.Point(442, 164);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(104, 30);
+            this.ClearButton.TabIndex = 53;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // CloseButton
             // 
-            this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.CloseButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
@@ -226,15 +227,27 @@
             this.BodyCheckBox.Text = "Body";
             this.BodyCheckBox.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(547, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 21);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // WodOptionSix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(569, 328);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BodyCheckBox);
             this.Controls.Add(this.CloseButton);
-            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.wodListBox);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.BarCheckBox);
@@ -251,6 +264,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "WodOptionSix";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Random";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,8 +283,9 @@
         private System.Windows.Forms.Label ExerciseLabel;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.TextBox NrOfExerciseTextbox;
-        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.CheckBox BodyCheckBox;
+        private System.Windows.Forms.Label label1;
     }
 }
