@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using WodLibrary;
 
+
 namespace WodCreatorUI
 {
     public partial class WodOptionSix : Form
@@ -37,15 +38,28 @@ namespace WodCreatorUI
 
         private void UpdateBinding()
         {
-            wodListBox.DataSource = null;
-            wodListBox.DataSource = Exercise;
-            wodListBox.DisplayMember = "ExerciseID";
+            string nrValue = NrOfExerciseTextbox.Text;
+            Int32 i;
+            if (!string.IsNullOrEmpty(nrValue) && Int32.TryParse(nrValue, out i))
+            {
+                wodListBox.DataSource = null;
+                wodListBox.DataSource = Exercise.OrderBy(a => Guid.NewGuid()).Take(i).ToList(); //".OrderBy(a => Guid.NewGuid()).take(i).ToList();" makes the list random
+                wodListBox.DisplayMember = "ExerciseID"; //get the info from ExerciseModel
+            }
+            else
+            {
+                wodListBox.DataSource = null;
+                wodListBox.DataSource = Exercise.OrderBy(a => Guid.NewGuid()).ToList(); //".OrderBy(a => Guid.NewGuid()).ToList();" makes the list random
+                wodListBox.DisplayMember = "ExerciseID"; //get the info from ExerciseModel
+            }
         }
 
         private void Checkboxes()
         {
-            DataAccess db = new DataAccess();
-            Exercise = new List<ExerciseModel>();
+            DataAccess db = new DataAccess(); // connect's with the database
+            Exercise = new List<ExerciseModel>(); // makes a new list for Exercise, so it wont be overridden at every IF statement
+
+
 
             if (BarBellCheckBox.Checked)
             {

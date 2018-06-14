@@ -38,7 +38,7 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.ExerciseLabel = new System.Windows.Forms.Label();
             this.CreateButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NrOfExerciseTextbox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.BodyCheckBox = new System.Windows.Forms.CheckBox();
@@ -52,10 +52,10 @@
             this.wodListBox.ForeColor = System.Drawing.Color.White;
             this.wodListBox.FormattingEnabled = true;
             this.wodListBox.ItemHeight = 17;
-            this.wodListBox.Location = new System.Drawing.Point(222, 91);
+            this.wodListBox.Location = new System.Drawing.Point(222, 176);
             this.wodListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.wodListBox.Name = "wodListBox";
-            this.wodListBox.Size = new System.Drawing.Size(211, 255);
+            this.wodListBox.Size = new System.Drawing.Size(211, 170);
             this.wodListBox.TabIndex = 52;
             // 
             // infoLabel
@@ -140,7 +140,7 @@
             this.ExerciseLabel.AutoSize = true;
             this.ExerciseLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExerciseLabel.ForeColor = System.Drawing.Color.White;
-            this.ExerciseLabel.Location = new System.Drawing.Point(218, 65);
+            this.ExerciseLabel.Location = new System.Drawing.Point(218, 147);
             this.ExerciseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExerciseLabel.Name = "ExerciseLabel";
             this.ExerciseLabel.Size = new System.Drawing.Size(158, 20);
@@ -156,7 +156,7 @@
             this.CreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateButton.ForeColor = System.Drawing.Color.White;
-            this.CreateButton.Location = new System.Drawing.Point(441, 91);
+            this.CreateButton.Location = new System.Drawing.Point(441, 178);
             this.CreateButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(104, 30);
@@ -165,17 +165,17 @@
             this.CreateButton.UseVisualStyleBackColor = false;
             this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
             // 
-            // textBox1
+            // NrOfExerciseTextbox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(384, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(49, 19);
-            this.textBox1.TabIndex = 42;
+            this.NrOfExerciseTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.NrOfExerciseTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NrOfExerciseTextbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NrOfExerciseTextbox.ForeColor = System.Drawing.Color.White;
+            this.NrOfExerciseTextbox.Location = new System.Drawing.Point(384, 148);
+            this.NrOfExerciseTextbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.NrOfExerciseTextbox.Name = "NrOfExerciseTextbox";
+            this.NrOfExerciseTextbox.Size = new System.Drawing.Size(49, 19);
+            this.NrOfExerciseTextbox.TabIndex = 42;
             // 
             // SaveButton
             // 
@@ -186,7 +186,7 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.White;
-            this.SaveButton.Location = new System.Drawing.Point(441, 127);
+            this.SaveButton.Location = new System.Drawing.Point(441, 214);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(104, 30);
@@ -243,7 +243,7 @@
             this.Controls.Add(this.WallBallCheckBox);
             this.Controls.Add(this.ExerciseLabel);
             this.Controls.Add(this.CreateButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NrOfExerciseTextbox);
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -268,7 +268,7 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label ExerciseLabel;
         private System.Windows.Forms.Button CreateButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NrOfExerciseTextbox;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.CheckBox BodyCheckBox;
