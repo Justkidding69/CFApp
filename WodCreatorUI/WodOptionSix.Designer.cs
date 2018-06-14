@@ -52,7 +52,7 @@
             this.wodListBox.ForeColor = System.Drawing.Color.White;
             this.wodListBox.FormattingEnabled = true;
             this.wodListBox.ItemHeight = 17;
-            this.wodListBox.Location = new System.Drawing.Point(222, 176);
+            this.wodListBox.Location = new System.Drawing.Point(223, 126);
             this.wodListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.wodListBox.Name = "wodListBox";
             this.wodListBox.Size = new System.Drawing.Size(211, 170);
@@ -63,7 +63,7 @@
             this.infoLabel.AutoSize = true;
             this.infoLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoLabel.ForeColor = System.Drawing.Color.White;
-            this.infoLabel.Location = new System.Drawing.Point(20, 91);
+            this.infoLabel.Location = new System.Drawing.Point(19, 69);
             this.infoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(174, 48);
@@ -75,7 +75,7 @@
             this.BarCheckBox.AutoSize = true;
             this.BarCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BarCheckBox.ForeColor = System.Drawing.Color.White;
-            this.BarCheckBox.Location = new System.Drawing.Point(23, 279);
+            this.BarCheckBox.Location = new System.Drawing.Point(23, 235);
             this.BarCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BarCheckBox.Name = "BarCheckBox";
             this.BarCheckBox.Size = new System.Drawing.Size(59, 26);
@@ -88,7 +88,7 @@
             this.KettleBellCheckBox.AutoSize = true;
             this.KettleBellCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KettleBellCheckBox.ForeColor = System.Drawing.Color.White;
-            this.KettleBellCheckBox.Location = new System.Drawing.Point(23, 242);
+            this.KettleBellCheckBox.Location = new System.Drawing.Point(23, 200);
             this.KettleBellCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.KettleBellCheckBox.Name = "KettleBellCheckBox";
             this.KettleBellCheckBox.Size = new System.Drawing.Size(110, 26);
@@ -101,7 +101,7 @@
             this.BarBellCheckBox.AutoSize = true;
             this.BarBellCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BarBellCheckBox.ForeColor = System.Drawing.Color.White;
-            this.BarBellCheckBox.Location = new System.Drawing.Point(23, 168);
+            this.BarBellCheckBox.Location = new System.Drawing.Point(23, 130);
             this.BarBellCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BarBellCheckBox.Name = "BarBellCheckBox";
             this.BarBellCheckBox.Size = new System.Drawing.Size(90, 26);
@@ -114,7 +114,7 @@
             this.WallBallCheckBox.AutoSize = true;
             this.WallBallCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WallBallCheckBox.ForeColor = System.Drawing.Color.White;
-            this.WallBallCheckBox.Location = new System.Drawing.Point(23, 205);
+            this.WallBallCheckBox.Location = new System.Drawing.Point(23, 165);
             this.WallBallCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.WallBallCheckBox.Name = "WallBallCheckBox";
             this.WallBallCheckBox.Size = new System.Drawing.Size(100, 26);
@@ -140,7 +140,7 @@
             this.ExerciseLabel.AutoSize = true;
             this.ExerciseLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExerciseLabel.ForeColor = System.Drawing.Color.White;
-            this.ExerciseLabel.Location = new System.Drawing.Point(218, 147);
+            this.ExerciseLabel.Location = new System.Drawing.Point(219, 97);
             this.ExerciseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExerciseLabel.Name = "ExerciseLabel";
             this.ExerciseLabel.Size = new System.Drawing.Size(158, 20);
@@ -156,7 +156,7 @@
             this.CreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateButton.ForeColor = System.Drawing.Color.White;
-            this.CreateButton.Location = new System.Drawing.Point(441, 178);
+            this.CreateButton.Location = new System.Drawing.Point(442, 128);
             this.CreateButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(104, 30);
@@ -171,7 +171,7 @@
             this.NrOfExerciseTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NrOfExerciseTextbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NrOfExerciseTextbox.ForeColor = System.Drawing.Color.White;
-            this.NrOfExerciseTextbox.Location = new System.Drawing.Point(384, 148);
+            this.NrOfExerciseTextbox.Location = new System.Drawing.Point(385, 98);
             this.NrOfExerciseTextbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NrOfExerciseTextbox.Name = "NrOfExerciseTextbox";
             this.NrOfExerciseTextbox.Size = new System.Drawing.Size(49, 19);
@@ -186,7 +186,7 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.White;
-            this.SaveButton.Location = new System.Drawing.Point(441, 214);
+            this.SaveButton.Location = new System.Drawing.Point(442, 164);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(104, 30);
@@ -204,7 +204,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(441, 316);
+            this.CloseButton.Location = new System.Drawing.Point(442, 266);
             this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(104, 30);
@@ -218,7 +218,7 @@
             this.BodyCheckBox.AutoSize = true;
             this.BodyCheckBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BodyCheckBox.ForeColor = System.Drawing.Color.White;
-            this.BodyCheckBox.Location = new System.Drawing.Point(23, 315);
+            this.BodyCheckBox.Location = new System.Drawing.Point(23, 270);
             this.BodyCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BodyCheckBox.Name = "BodyCheckBox";
             this.BodyCheckBox.Size = new System.Drawing.Size(76, 26);
@@ -231,7 +231,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(569, 373);
+            this.ClientSize = new System.Drawing.Size(569, 328);
             this.Controls.Add(this.BodyCheckBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.SaveButton);
