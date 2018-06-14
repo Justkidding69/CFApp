@@ -41,5 +41,11 @@ namespace WodCreatorUI
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var WodBuild = new CustomWod();
+            WodBuild.Show();
+        }
     }
 }

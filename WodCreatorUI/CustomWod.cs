@@ -7,50 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using WodLibrary;
-
 
 namespace WodCreatorUI
 {
-    public partial class WodOptionSix : Form
+    public partial class CustomWod : Form
     {
         List<ExerciseModel> Exercise = new List<ExerciseModel>();
 
-        
-        public WodOptionSix()
+        public CustomWod()
         {
             InitializeComponent();
-            UpdateBinding();        
-        }
-
-
-        private void RandomWodType()
-        {
-            string[] rndWodLabel = //Array with Wod Types
-            {
-                "21-15-9",
-                "10-9-8-7-6-5-4-3-2-1",
-                "AMRAP12",
-                "AMRAP8",
-                "AMRAP4",
-                "CHIPPER",
-            };
-            Random rw = new Random();
-            int select = rw.Next(0, 6);
-            RandomWodText.Text = rndWodLabel[select]; //picks a random wod type from the list
-        }
-
-        private void CreateButton_Click(object sender, EventArgs e)
-        {
-            RandomWodType();
-            Checkboxes();
             UpdateBinding();
-        }
-
-        private void CloseButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void UpdateBinding()
@@ -70,15 +38,38 @@ namespace WodCreatorUI
                 wodListBox.DisplayMember = "ExerciseID"; //get the info from ExerciseModel
             }
         }
+        private void WodType_Checkboxes()
+        {
+            if (fastCheckBox.Checked)
+            {
+                RandomWodText.Text = fastCheckBox.Text;
+            }
+            if (EmotmCheckBox.Checked)
+            {
+                RandomWodText.Text = EmotmCheckBox.Text;
+            }
+            if (AmrapCheckBox.Checked)
+            {
+                RandomWodText.Text = AmrapCheckBox.Text;
+            }
+            if (ChipperCheckBox.Checked)
+            {
+                RandomWodText.Text = ChipperCheckBox.Text;
+            }
+            if (CountDownCheckBox.Checked)
+            {
+                RandomWodText.Text = CountDownCheckBox.Text;
+            }
+        }
 
-        private void Checkboxes()
+        private void Exercise_Checkboxes()
         {
             DataAccess db = new DataAccess(); // connect's with the database
             Exercise = new List<ExerciseModel>(); // makes a new list for Exercise, so it wont be overridden at every IF statement
 
             if (BarBellCheckBox.Checked)
             {
-                Exercise.AddRange( db.GetExercise(BarBellCheckBox.Text));
+                Exercise.AddRange(db.GetExercise(BarBellCheckBox.Text));
             }
             if (WallBallCheckBox.Checked)
             {
@@ -97,7 +88,6 @@ namespace WodCreatorUI
                 Exercise.AddRange(db.GetExercise(BodyCheckBox.Text));
             }
 
-
             if (!BarBellCheckBox.Checked && !WallBallCheckBox.Checked && !KettleBellCheckBox.Checked && !BarCheckBox.Checked)
             {
                 Exercise.AddRange(db.GetExercise(BarBellCheckBox.Text));
@@ -108,14 +98,27 @@ namespace WodCreatorUI
             }
         }
 
-        private void ClearButton_Click(object sender, EventArgs e)
-        {
-            wodListBox.DataSource = null;
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void CreateButton_Click(object sender, EventArgs e)
+        {
+            Exercise_Checkboxes();
+            UpdateBinding();
+            WodType_Checkboxes();
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            wodListBox.DataSource = null;
+            RandomWodText.Text = "";
         }
     }
 }
