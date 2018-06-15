@@ -111,6 +111,13 @@ namespace WodCreatorUI
         private void ClearButton_Click(object sender, EventArgs e)
         {
             wodListBox.DataSource = null;
+            RandomWodText.Text = "";
+            NrOfExerciseTextbox.Text = "";
+            this.BarBellCheckBox.Checked = false;
+            this.BarCheckBox.Checked = false;
+            this.KettleBellCheckBox.Checked = false;
+            this.WallBallCheckBox.Checked = false;
+            this.BodyCheckBox.Checked = false;
         }
 
         private void label1_Click(object sender, EventArgs e)

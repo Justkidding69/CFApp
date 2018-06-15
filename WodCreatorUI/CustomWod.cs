@@ -38,6 +38,7 @@ namespace WodCreatorUI
                 wodListBox.DisplayMember = "ExerciseID"; //get the info from ExerciseModel
             }
         }
+
         private void WodType_Checkboxes()
         {
             if (fastCheckBox.Checked)
@@ -58,7 +59,7 @@ namespace WodCreatorUI
             }
             if (CountDownCheckBox.Checked)
             {
-                RandomWodText.Text = CountDownCheckBox.Text;
+                RandomWodText.Text = "10-9-8-7-6-5-4-3-2-1";
             }
         }
 
@@ -119,6 +120,77 @@ namespace WodCreatorUI
         {
             wodListBox.DataSource = null;
             RandomWodText.Text = "";
+            NrOfExerciseTextbox.Text = "";
+            this.fastCheckBox.Checked = false;
+            this.EmotmCheckBox.Checked = false;
+            this.ChipperCheckBox.Checked = false;
+            this.CountDownCheckBox.Checked = false;
+            this.AmrapCheckBox.Checked = false;
+            this.BarBellCheckBox.Checked = false;
+            this.BarCheckBox.Checked = false;
+            this.KettleBellCheckBox.Checked = false;
+            this.WallBallCheckBox.Checked = false;
+            this.BodyCheckBox.Checked = false;
+        }
+
+        private void AmrapCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AmrapCheckBox.Checked == true)
+            {
+                this.fastCheckBox.Checked = false;
+                this.EmotmCheckBox.Checked = false;
+                this.ChipperCheckBox.Checked = false;
+                this.CountDownCheckBox.Checked = false;
+
+            }
+        }
+
+        private void ChipperCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChipperCheckBox.Checked == true)
+            {
+                this.fastCheckBox.Checked = false;
+                this.EmotmCheckBox.Checked = false;
+                this.AmrapCheckBox.Checked = false;
+                this.CountDownCheckBox.Checked = false;
+
+            }
+        }
+
+        private void EmotmCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (EmotmCheckBox.Checked == true)
+            {
+                this.fastCheckBox.Checked = false;
+                this.AmrapCheckBox.Checked = false;
+                this.ChipperCheckBox.Checked = false;
+                this.CountDownCheckBox.Checked = false;
+
+            }
+        }
+
+        private void fastCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fastCheckBox.Checked == true)
+            {
+                this.EmotmCheckBox.Checked = false;
+                this.AmrapCheckBox.Checked = false;
+                this.ChipperCheckBox.Checked = false;
+                this.CountDownCheckBox.Checked = false;
+
+            }
+        }
+
+        private void CountDownCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CountDownCheckBox.Checked == true)
+            {
+                this.fastCheckBox.Checked = false;
+                this.EmotmCheckBox.Checked = false;
+                this.AmrapCheckBox.Checked = false;
+                this.ChipperCheckBox.Checked = false;
+
+            }
         }
     }
 }

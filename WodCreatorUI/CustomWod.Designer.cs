@@ -266,6 +266,7 @@
             this.AmrapCheckBox.TabIndex = 74;
             this.AmrapCheckBox.Text = "AMRAP";
             this.AmrapCheckBox.UseVisualStyleBackColor = true;
+            this.AmrapCheckBox.CheckedChanged += new System.EventHandler(this.AmrapCheckBox_CheckedChanged);
             // 
             // ChipperCheckBox
             // 
@@ -279,6 +280,7 @@
             this.ChipperCheckBox.TabIndex = 75;
             this.ChipperCheckBox.Text = "CHIPPER";
             this.ChipperCheckBox.UseVisualStyleBackColor = true;
+            this.ChipperCheckBox.CheckedChanged += new System.EventHandler(this.ChipperCheckBox_CheckedChanged);
             // 
             // fastCheckBox
             // 
@@ -292,6 +294,7 @@
             this.fastCheckBox.TabIndex = 76;
             this.fastCheckBox.Text = "21-15-9";
             this.fastCheckBox.UseVisualStyleBackColor = true;
+            this.fastCheckBox.CheckedChanged += new System.EventHandler(this.fastCheckBox_CheckedChanged);
             // 
             // EmotmCheckBox
             // 
@@ -305,6 +308,7 @@
             this.EmotmCheckBox.TabIndex = 77;
             this.EmotmCheckBox.Text = "EMOTM";
             this.EmotmCheckBox.UseVisualStyleBackColor = true;
+            this.EmotmCheckBox.CheckedChanged += new System.EventHandler(this.EmotmCheckBox_CheckedChanged);
             // 
             // CountDownCheckBox
             // 
@@ -318,6 +322,7 @@
             this.CountDownCheckBox.TabIndex = 78;
             this.CountDownCheckBox.Text = "10-9-8-7-6-";
             this.CountDownCheckBox.UseVisualStyleBackColor = true;
+            this.CountDownCheckBox.CheckedChanged += new System.EventHandler(this.CountDownCheckBox_CheckedChanged);
             // 
             // CustomWod
             // 
