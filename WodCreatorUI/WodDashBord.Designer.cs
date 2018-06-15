@@ -33,8 +33,9 @@
             this.wodOptionFiveButton = new System.Windows.Forms.Button();
             this.wodOptionSixButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ExitLabel = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -96,16 +97,16 @@
             this.button1.Text = "Hero Wod";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // ExitLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(223, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.ExitLabel.AutoSize = true;
+            this.ExitLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLabel.Location = new System.Drawing.Point(223, 3);
+            this.ExitLabel.Name = "ExitLabel";
+            this.ExitLabel.Size = new System.Drawing.Size(17, 17);
+            this.ExitLabel.TabIndex = 9;
+            this.ExitLabel.Text = "X";
+            this.ExitLabel.Click += new System.EventHandler(this.ExitLabel_Click);
             // 
             // button2
             // 
@@ -123,6 +124,16 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // panelHeader
+            // 
+            this.panelHeader.Location = new System.Drawing.Point(0, 1);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(243, 30);
+            this.panelHeader.TabIndex = 11;
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.panelHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
+            // 
             // WodDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -130,19 +141,20 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(243, 329);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ExitLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.wodOptionSixButton);
             this.Controls.Add(this.wodOptionFiveButton);
             this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.panelHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "WodDashBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.WodDashBoard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,8 +166,9 @@
         private System.Windows.Forms.Button wodOptionFiveButton;
         private System.Windows.Forms.Button wodOptionSixButton;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ExitLabel;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panelHeader;
     }
 }
 

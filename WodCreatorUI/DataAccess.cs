@@ -16,9 +16,16 @@ namespace WodCreatorUI
 
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("WodDB")))
             {
- 
+
                 return connection.Query<ExerciseModel>("dbo.GetEquipmentType @ExerciseEquipment", new { ExerciseEquipment = ExerciseEquipment }).ToList();
-                
+
+            }
+        }
+        public List<GirlsModel> GetGirls(string GirlWods)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("WodDB")))
+            {
+                return connection.Query<GirlsModel>("dbo.GirlWod @GirlWods", new { GirlWods = GirlWods }).ToList();
             }
         }
     }

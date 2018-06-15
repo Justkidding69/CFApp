@@ -112,7 +112,7 @@ namespace WodCreatorUI
         {
             wodListBox.DataSource = null;
             RandomWodText.Text = "";
-            NrOfExerciseTextbox.Text = "";
+            NrOfExerciseTextbox.Text = "E.g. 3";
             this.BarBellCheckBox.Checked = false;
             this.BarCheckBox.Checked = false;
             this.KettleBellCheckBox.Checked = false;
@@ -120,9 +120,52 @@ namespace WodCreatorUI
             this.BodyCheckBox.Checked = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ExitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void panelHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void panelHeader_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+
+        }
+
+        private void panelHeader_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+                this.Update();
+            }
+        }
+
+        private void NrOfExerciseTextbox_Enter(object sender, EventArgs e)
+        {
+            if (NrOfExerciseTextbox.Text == "E.g. 3")
+            {
+                NrOfExerciseTextbox.Text = "";
+
+                NrOfExerciseTextbox.ForeColor = Color.White;
+            }
+        }
+
+        private void NrOfExerciseTextbox_Leave(object sender, EventArgs e)
+        {
+            if (NrOfExerciseTextbox.Text == "")
+            {
+                NrOfExerciseTextbox.Text = "E.g. 3";
+                NrOfExerciseTextbox.ForeColor = Color.Silver;
+            }
         }
     }
 }

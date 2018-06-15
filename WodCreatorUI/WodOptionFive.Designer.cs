@@ -32,8 +32,10 @@
             this.LadyWodNameLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.infoLabel = new System.Windows.Forms.Label();
+            this.CreateButton = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LadyWodNameLabel
@@ -75,17 +77,6 @@
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(223, 126);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 148);
-            this.textBox1.TabIndex = 52;
-            // 
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
@@ -98,14 +89,51 @@
             this.infoLabel.TabIndex = 53;
             this.infoLabel.Text = "Check if you \r\nwant it included";
             // 
+            // CreateButton
+            // 
+            this.CreateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.CreateButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CreateButton.FlatAppearance.BorderSize = 0;
+            this.CreateButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.CreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CreateButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateButton.ForeColor = System.Drawing.Color.White;
+            this.CreateButton.Location = new System.Drawing.Point(428, 126);
+            this.CreateButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.CreateButton.Name = "CreateButton";
+            this.CreateButton.Size = new System.Drawing.Size(80, 30);
+            this.CreateButton.TabIndex = 54;
+            this.CreateButton.Text = "Create";
+            this.CreateButton.UseVisualStyleBackColor = false;
+            this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(223, 126);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(175, 144);
+            this.listBox1.TabIndex = 55;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(22, 136);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(170, 138);
+            this.textBox1.TabIndex = 56;
+            // 
             // WodOptionFive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(529, 289);
-            this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.CreateButton);
+            this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.LadyWodNameLabel);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.CloseBtn);
@@ -124,7 +152,9 @@
         private System.Windows.Forms.Label LadyWodNameLabel;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button CloseBtn;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label infoLabel;
+        private System.Windows.Forms.Button CreateButton;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

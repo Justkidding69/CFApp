@@ -15,13 +15,11 @@ namespace WodCreatorUI
         public WodDashBoard()
         {
             InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void wodOptionFiveButton_Click(object sender, EventArgs e)
         {
             var formFive = new WodOptionFive();
-            formFive.StartPosition = FormStartPosition.CenterScreen;
             formFive.Show();
         }
 
@@ -32,12 +30,7 @@ namespace WodCreatorUI
             formSix.Show();
         }
 
-        private void WodDashBoard_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void ExitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -46,6 +39,30 @@ namespace WodCreatorUI
         {
             var WodBuild = new CustomWod();
             WodBuild.Show();
+        }
+
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void panelHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void panelHeader_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+
+        }
+
+        private void panelHeader_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+                this.Update();
+            }
         }
     }
 }

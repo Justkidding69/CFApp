@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.RandomWodText = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ExitLabel = new System.Windows.Forms.Label();
             this.BodyCheckBox = new System.Windows.Forms.CheckBox();
             this.CloseButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             this.fastCheckBox = new System.Windows.Forms.CheckBox();
             this.EmotmCheckBox = new System.Windows.Forms.CheckBox();
             this.CountDownCheckBox = new System.Windows.Forms.CheckBox();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // RandomWodText
@@ -60,17 +61,17 @@
             this.RandomWodText.Size = new System.Drawing.Size(0, 22);
             this.RandomWodText.TabIndex = 72;
             // 
-            // label1
+            // ExitLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(549, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
-            this.label1.TabIndex = 71;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.ExitLabel.AutoSize = true;
+            this.ExitLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLabel.ForeColor = System.Drawing.Color.White;
+            this.ExitLabel.Location = new System.Drawing.Point(549, 3);
+            this.ExitLabel.Name = "ExitLabel";
+            this.ExitLabel.Size = new System.Drawing.Size(17, 17);
+            this.ExitLabel.TabIndex = 71;
+            this.ExitLabel.Text = "X";
+            this.ExitLabel.Click += new System.EventHandler(this.ExitLabel_Click);
             // 
             // BodyCheckBox
             // 
@@ -233,13 +234,16 @@
             // 
             this.NrOfExerciseTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.NrOfExerciseTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NrOfExerciseTextbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NrOfExerciseTextbox.ForeColor = System.Drawing.Color.White;
+            this.NrOfExerciseTextbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NrOfExerciseTextbox.ForeColor = System.Drawing.Color.Silver;
             this.NrOfExerciseTextbox.Location = new System.Drawing.Point(412, 302);
             this.NrOfExerciseTextbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NrOfExerciseTextbox.Name = "NrOfExerciseTextbox";
             this.NrOfExerciseTextbox.Size = new System.Drawing.Size(49, 19);
             this.NrOfExerciseTextbox.TabIndex = 58;
+            this.NrOfExerciseTextbox.Text = "E.g. 3";
+            this.NrOfExerciseTextbox.Enter += new System.EventHandler(this.NrOfExerciseTextbox_Enter);
+            this.NrOfExerciseTextbox.Leave += new System.EventHandler(this.NrOfExerciseTextbox_Leave);
             // 
             // titleLabel
             // 
@@ -324,6 +328,16 @@
             this.CountDownCheckBox.UseVisualStyleBackColor = true;
             this.CountDownCheckBox.CheckedChanged += new System.EventHandler(this.CountDownCheckBox_CheckedChanged);
             // 
+            // panelHeader
+            // 
+            this.panelHeader.Location = new System.Drawing.Point(0, 1);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(569, 32);
+            this.panelHeader.TabIndex = 79;
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.panelHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
+            // 
             // CustomWod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -336,7 +350,7 @@
             this.Controls.Add(this.ChipperCheckBox);
             this.Controls.Add(this.AmrapCheckBox);
             this.Controls.Add(this.RandomWodText);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ExitLabel);
             this.Controls.Add(this.BodyCheckBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ClearButton);
@@ -350,6 +364,7 @@
             this.Controls.Add(this.CreateButton);
             this.Controls.Add(this.NrOfExerciseTextbox);
             this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.panelHeader);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -364,7 +379,7 @@
         #endregion
 
         private System.Windows.Forms.Label RandomWodText;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ExitLabel;
         private System.Windows.Forms.CheckBox BodyCheckBox;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button ClearButton;
@@ -383,5 +398,6 @@
         private System.Windows.Forms.CheckBox fastCheckBox;
         private System.Windows.Forms.CheckBox EmotmCheckBox;
         private System.Windows.Forms.CheckBox CountDownCheckBox;
+        private System.Windows.Forms.Panel panelHeader;
     }
 }
